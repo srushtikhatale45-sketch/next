@@ -7,7 +7,7 @@ export default function RootLayout() {
       <body>
         <nav className="bg-white shadow-lg p-4">
           <div className="max-w-7xl mx-auto flex justify-between">
-            <Link href="/" className="text-xl font-bold">Your Logo</Link>
+            <Link href="/" className="text-xl font-bold">Unique Aqua</Link>
             <div className="space-x-4">
               <Link href="/" className="hover:text-blue-600">Home</Link>
               <Link href="/about" className="hover:text-blue-600">About</Link>

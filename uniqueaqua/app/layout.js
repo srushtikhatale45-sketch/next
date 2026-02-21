@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "My App",
+  title: " Unique Aqua",
   description: "Created with Next.js",
 };
 

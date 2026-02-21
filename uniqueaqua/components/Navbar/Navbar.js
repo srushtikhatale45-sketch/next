@@ -21,7 +21,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-800">
-              MyLogo
+              Unique Aqua
             </Link>
           </div>
 
