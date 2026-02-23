@@ -1,21 +1,19 @@
-import Link from "next/link";
-import "./globals.css";
+import Layout from '../components/Navbar/Navbar';
 
-export default function RootLayout() {
+export default function Home() {
   return (
-    <html lang="en">
-      <body>
-        <nav className="bg-white shadow-lg p-4">
-          <div className="max-w-7xl mx-auto flex justify-between">
-            <Link href="/" className="text-xl font-bold">Unique Aqua</Link>
-            <div className="space-x-4">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
-              <Link href="/about" className="hover:text-blue-600">About</Link>
-              <Link href="/contact" className="hover:text-blue-600">Contact</Link>
-            </div>
-          </div>
-        </nav>
-      </body>
-    </html>
+    <Layout
+      seoProps={{
+        title: "Home",
+        description: "Welcome to Unique Aqua Systems - Your trusted partner in water treatment and industrial chemical solutions.",
+        keywords: "water treatment, industrial chemicals, home page",
+        ogUrl: "https://uniqueaqua.com"
+      }}
+    >
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold text-blue-900">Welcome to Unique Aqua Systems</h1>
+        <p className="mt-4 text-gray-600">Your trusted partner in chemical solutions.</p>
+      </div>
+    </Layout>
   );
 }

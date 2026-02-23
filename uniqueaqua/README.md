@@ -31,3 +31,6 @@ Installing devDependencies:
 - eslint
 - eslint-config-next
 - tailwindcss
+
+To check which folder is missing
+npx-broken-link-checker nameofwebsite
