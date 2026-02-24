@@ -1,19 +1,24 @@
+"use client";
+import {c1, c2, c3, c4 } from '../assets';
 import Layout from '../components/Navbar/Navbar';
-
+import Image from 'next/image';
+import { useRef } from 'react';
+import Hero from './home/component/Hero';
 export default function Home() {
+  const imageRef =()=>{
+    const imageRef=useRef(null);
+    const handleScroll=()=>{
+      imageRef.current?.scrollIntoView({
+        behavior:'smooth',
+        block:'center',
+      });
+
+    }
+  };
   return (
-    <Layout
-      seoProps={{
-        title: "Home",
-        description: "Welcome to Unique Aqua Systems - Your trusted partner in water treatment and industrial chemical solutions.",
-        keywords: "water treatment, industrial chemicals, home page",
-        ogUrl: "https://uniqueaqua.com"
-      }}
-    >
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-blue-900">Welcome to Unique Aqua Systems</h1>
-        <p className="mt-4 text-gray-600">Your trusted partner in chemical solutions.</p>
-      </div>
-    </Layout>
+    <>
+    <Hero />
+    </>
+    
   );
 }
