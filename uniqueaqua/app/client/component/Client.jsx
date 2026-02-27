@@ -86,12 +86,29 @@ function Client() {
           alt="chateau"
         />
       </div>
-       <Link
-              href="/client"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#f97316] via-[#ea580c] to-[#fb923c] text-white rounded-xl font-bold hover:shadow-xl hover:scale-105 transition-all group"
-            >
 
-            </Link>
+      {/* Centered Button Container */}
+      <div className="flex justify-center mt-12">
+        <Link
+          href="/client"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-sky-500 via-sky-600 to-cyan-600 text-white rounded-xl font-bold hover:shadow-xl hover:scale-105 transition-all group shadow-lg"
+        >
+          <span>View All Clients</span>
+          <svg
+            className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 7l5 5m0 0l-5 5m5-5H6"
+            />
+          </svg>
+        </Link>
+      </div>
     </div>
   );
 }
